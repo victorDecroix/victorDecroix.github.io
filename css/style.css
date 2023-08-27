@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5),
+    -1px -1px 1px rgba(179, 179, 179, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.55),
+    0 1px 3px white;
+  overflow: hidden;
+  color: #191919;
+  background-color: rgb(156, 173, 173);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.big {
+  font-size: 150%;
+}
+
+.med {
+  font-size: 100%;
+  letter-spacing: 0.5px;
+}
+
+.small {
+  font-size: 65%;
+  letter-spacing: 0.5px;
+}
+
+.no-space {
+  letter-spacing: 0px;
+}
+
+.card {
+  background-color: #f4f1eb;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  height: 200px;
+  width: 350px;
+  margin: 20vh auto 0 auto;
+  padding: 20px 10px 10px 10px;
+  box-shadow: 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.row {
+  display: block;
+  text-align: center;
+}
+
+.row:nth-child(2) {
+  margin: 35px 0 50px 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+p {
+  margin: 0;
+}
+
+.mail {
+  text-transform: lowercase;
+}
